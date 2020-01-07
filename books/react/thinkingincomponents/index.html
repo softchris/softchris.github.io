@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Thinking in Components</title>
+    <meta name="description" content="">
+    <head link="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-abap.js"></head>
+    
+    <link rel="preload" href="/assets/css/0.styles.92bf3894.css" as="style"><link rel="preload" href="/assets/js/app.26388f3c.js" as="script"><link rel="preload" href="/assets/js/10.5bc7cce6.js" as="script"><link rel="preload" href="/assets/js/33.6407b065.js" as="script"><link rel="prefetch" href="/assets/js/1.76e1fa2c.js"><link rel="prefetch" href="/assets/js/100.7d4da4d2.js"><link rel="prefetch" href="/assets/js/101.3eaa2d62.js"><link rel="prefetch" href="/assets/js/102.20b699c2.js"><link rel="prefetch" href="/assets/js/103.db03b7aa.js"><link rel="prefetch" href="/assets/js/104.c802d704.js"><link rel="prefetch" href="/assets/js/105.0856b4fa.js"><link rel="prefetch" href="/assets/js/106.4dfe3d4d.js"><link rel="prefetch" href="/assets/js/107.daffe558.js"><link rel="prefetch" href="/assets/js/108.2465f7cf.js"><link rel="prefetch" href="/assets/js/109.2bdf55df.js"><link rel="prefetch" href="/assets/js/11.393f848d.js"><link rel="prefetch" href="/assets/js/110.5f942d10.js"><link rel="prefetch" href="/assets/js/111.0fd60c24.js"><link rel="prefetch" href="/assets/js/112.d64efa07.js"><link rel="prefetch" href="/assets/js/113.1e20cdd2.js"><link rel="prefetch" href="/assets/js/114.865941ce.js"><link rel="prefetch" href="/assets/js/115.7d935e27.js"><link rel="prefetch" href="/assets/js/116.fcc98a0d.js"><link rel="prefetch" href="/assets/js/117.5c57dd4a.js"><link rel="prefetch" href="/assets/js/118.264454f3.js"><link rel="prefetch" href="/assets/js/119.25f0debc.js"><link rel="prefetch" href="/assets/js/12.0ed640a1.js"><link rel="prefetch" href="/assets/js/120.e081fd4a.js"><link rel="prefetch" href="/assets/js/13.9b870990.js"><link rel="prefetch" href="/assets/js/14.cc3491a4.js"><link rel="prefetch" href="/assets/js/15.e392c70f.js"><link rel="prefetch" href="/assets/js/16.019de8ce.js"><link rel="prefetch" href="/assets/js/17.c74abd7b.js"><link rel="prefetch" href="/assets/js/18.4ab7403e.js"><link rel="prefetch" href="/assets/js/19.ae2840ee.js"><link rel="prefetch" href="/assets/js/20.09f9c6ec.js"><link rel="prefetch" href="/assets/js/21.4b8a4546.js"><link rel="prefetch" href="/assets/js/22.976a3745.js"><link rel="prefetch" href="/assets/js/23.d4b48fdb.js"><link rel="prefetch" href="/assets/js/24.297c5891.js"><link rel="prefetch" href="/assets/js/25.077254a4.js"><link rel="prefetch" href="/assets/js/26.75dd9db7.js"><link rel="prefetch" href="/assets/js/27.dcb00858.js"><link rel="prefetch" href="/assets/js/28.a4db86ee.js"><link rel="prefetch" href="/assets/js/29.9d917509.js"><link rel="prefetch" href="/assets/js/3.95140222.js"><link rel="prefetch" href="/assets/js/30.e2c51e74.js"><link rel="prefetch" href="/assets/js/31.2f6479c3.js"><link rel="prefetch" href="/assets/js/32.68a73a81.js"><link rel="prefetch" href="/assets/js/34.088d869f.js"><link rel="prefetch" href="/assets/js/35.74235618.js"><link rel="prefetch" href="/assets/js/36.1f9582f8.js"><link rel="prefetch" href="/assets/js/37.bf5d6087.js"><link rel="prefetch" href="/assets/js/38.5b6560fc.js"><link rel="prefetch" href="/assets/js/39.e5757cb4.js"><link rel="prefetch" href="/assets/js/4.b33b06f6.js"><link rel="prefetch" href="/assets/js/40.9ed5a9e0.js"><link rel="prefetch" href="/assets/js/41.b40ed077.js"><link rel="prefetch" href="/assets/js/42.4172e39e.js"><link rel="prefetch" href="/assets/js/43.b152737d.js"><link rel="prefetch" href="/assets/js/44.19adf854.js"><link rel="prefetch" href="/assets/js/45.4705ec48.js"><link rel="prefetch" href="/assets/js/46.04efbaf9.js"><link rel="prefetch" href="/assets/js/47.cd593f3b.js"><link rel="prefetch" href="/assets/js/48.57ed38b2.js"><link rel="prefetch" href="/assets/js/49.1b30035f.js"><link rel="prefetch" href="/assets/js/5.44d1fb4e.js"><link rel="prefetch" href="/assets/js/50.7fe77565.js"><link rel="prefetch" href="/assets/js/51.16083d55.js"><link rel="prefetch" href="/assets/js/52.222f6cb2.js"><link rel="prefetch" href="/assets/js/53.e9b90e93.js"><link rel="prefetch" href="/assets/js/54.649fb5ce.js"><link rel="prefetch" href="/assets/js/55.036e444e.js"><link rel="prefetch" href="/assets/js/56.297fda50.js"><link rel="prefetch" href="/assets/js/57.a55e641d.js"><link rel="prefetch" href="/assets/js/58.78d82242.js"><link rel="prefetch" href="/assets/js/59.bda880a8.js"><link rel="prefetch" href="/assets/js/6.67cc1f3f.js"><link rel="prefetch" href="/assets/js/60.8d4e87f5.js"><link rel="prefetch" href="/assets/js/61.aa8ee057.js"><link rel="prefetch" href="/assets/js/62.c27f5f3f.js"><link rel="prefetch" href="/assets/js/63.bce219b7.js"><link rel="prefetch" href="/assets/js/64.6e2381f6.js"><link rel="prefetch" href="/assets/js/65.d8a69dca.js"><link rel="prefetch" href="/assets/js/66.8a35e415.js"><link rel="prefetch" href="/assets/js/67.18e461c8.js"><link rel="prefetch" href="/assets/js/68.6f6b80b0.js"><link rel="prefetch" href="/assets/js/69.cc8504ff.js"><link rel="prefetch" href="/assets/js/7.c663ff3b.js"><link rel="prefetch" href="/assets/js/70.6d130260.js"><link rel="prefetch" href="/assets/js/71.32090224.js"><link rel="prefetch" href="/assets/js/72.120c008d.js"><link rel="prefetch" href="/assets/js/73.7968ba45.js"><link rel="prefetch" href="/assets/js/74.6223b8aa.js"><link rel="prefetch" href="/assets/js/75.6e2fbfbe.js"><link rel="prefetch" href="/assets/js/76.c8afe4ea.js"><link rel="prefetch" href="/assets/js/77.85dfd29a.js"><link rel="prefetch" href="/assets/js/78.48b6dd73.js"><link rel="prefetch" href="/assets/js/79.f4800a89.js"><link rel="prefetch" href="/assets/js/8.988484b0.js"><link rel="prefetch" href="/assets/js/80.950ead2a.js"><link rel="prefetch" href="/assets/js/81.93f56455.js"><link rel="prefetch" href="/assets/js/82.909d5110.js"><link rel="prefetch" href="/assets/js/83.9e3357aa.js"><link rel="prefetch" href="/assets/js/84.602dfc87.js"><link rel="prefetch" href="/assets/js/85.f5ebffe9.js"><link rel="prefetch" href="/assets/js/86.4acc7392.js"><link rel="prefetch" href="/assets/js/87.6401c50e.js"><link rel="prefetch" href="/assets/js/88.c7c4444e.js"><link rel="prefetch" href="/assets/js/89.9837a1df.js"><link rel="prefetch" href="/assets/js/9.20ba5650.js"><link rel="prefetch" href="/assets/js/90.dc8ae67f.js"><link rel="prefetch" href="/assets/js/91.cb72f099.js"><link rel="prefetch" href="/assets/js/92.7fad9f42.js"><link rel="prefetch" href="/assets/js/93.b499e50b.js"><link rel="prefetch" href="/assets/js/94.9d0cd305.js"><link rel="prefetch" href="/assets/js/95.b5f7873d.js"><link rel="prefetch" href="/assets/js/96.61c5e02c.js"><link rel="prefetch" href="/assets/js/97.cd67c643.js"><link rel="prefetch" href="/assets/js/98.34e5195f.js"><link rel="prefetch" href="/assets/js/99.fb6f5121.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.92bf3894.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="book-layout" data-v-4d6ae5a9><div class="left" data-v-4d6ae5a9><div class="book-detail" data-v-d992904e data-v-4d6ae5a9><div data-v-d992904e><div data-v-d992904e><!----> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth1" data-v-d992904e><!----> <span data-v-d992904e>Basics</span></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/jsx/" class="title" data-v-d992904e>JSX</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/setup/" class="title" data-v-d992904e>Set up</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/components/" class="title" data-v-d992904e>Component introduction</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/props/" class="title" data-v-d992904e>Props</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/state/" class="title" data-v-d992904e>State</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/methods/" class="title" data-v-d992904e>Methods</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2 selected" data-v-d992904e><a href="/books/react/thinkingincomponents/" class="title selected" data-v-d992904e>Thinking in Components</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/conditional/" class="title" data-v-d992904e>Conditional rendering</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/Chapter191Forms.html" class="title" data-v-d992904e>Forms</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/Chapter192FormsValidation.html" class="title" data-v-d992904e>Forms Validation</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth1" data-v-d992904e><!----> <span data-v-d992904e>Styling</span></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/styledcomponents/" class="title" data-v-d992904e>Styled components</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/inlinestyling/" class="title" data-v-d992904e>Inline styling</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth1" data-v-d992904e><!----> <span data-v-d992904e>Images</span></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/adding-images/" class="title" data-v-d992904e>Addding Images</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth1" data-v-d992904e><!----> <span data-v-d992904e>Routing</span></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/routers/" class="title" data-v-d992904e>Core Concepts</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/router-parameters/" class="title" data-v-d992904e>Router and Query params</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/programmatic-routing/" class="title" data-v-d992904e>Programmatic Navigation</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/lazy-loading/" class="title" data-v-d992904e>Lazy Loading</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth1" data-v-d992904e><!----> <span data-v-d992904e>Advanced patterns</span></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/context/" class="title" data-v-d992904e>Context API</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/hooks/" class="title" data-v-d992904e>Hooks</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/render-props/" class="title" data-v-d992904e>Render props</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth1" data-v-d992904e><!----> <span data-v-d992904e>Testing</span></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/jest/" class="title" data-v-d992904e>Jest</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/nock/" class="title" data-v-d992904e>Nock</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/react-testing-library/" class="title" data-v-d992904e>React Testing Library</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth1" data-v-d992904e><!----> <span data-v-d992904e>Redux</span></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/redux/" class="title" data-v-d992904e>Redux</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/redux-actions/" class="title" data-v-d992904e>Actions</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/redux-reducers/" class="title" data-v-d992904e>Reducers</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/redux-store/" class="title" data-v-d992904e>Store</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/react-and-redux/" class="title" data-v-d992904e>Adding Redux to React</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/redux-side-effects/" class="title" data-v-d992904e>Side effects</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/redux-form/" class="title" data-v-d992904e>Redux Form</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth1" data-v-d992904e><!----> <span data-v-d992904e>Libraries</span></div> <div data-v-d992904e>
+      
+    </div></div><div data-v-d992904e><div class="depth2" data-v-d992904e><a href="/books/react/storybook/" class="title" data-v-d992904e>Storybook</a> <!----></div> <div data-v-d992904e>
+      
+    </div></div></div></div> <div class="right theme-default-content" data-v-4d6ae5a9><div class="content__default" data-v-4d6ae5a9><h1 id="thinking-in-components-building-a-todo-app"><a href="#thinking-in-components-building-a-todo-app" aria-hidden="true" class="header-anchor">#</a> Thinking in components - building a todo app</h1> <p>In this chapter we will learn:</p> <ul><li>How to break down an app into smaller components</li> <li>Introduce the concepts: presentation/dumb component and container component</li></ul> <p>Thinking in components is about being able to break down an application in components. Consider something as simple as a Todo application. It will most likely consist of a number of components. Let's try and break that down.</p> <h2 id="a-list-of-todos"><a href="#a-list-of-todos" aria-hidden="true" class="header-anchor">#</a> A list of todos</h2> <p>We start off by a list of todos and we realise we need to be able to render said list. Before we consider how we should render it out on the screen, let's think about the underlying data structure.</p> <p>A todo has a description. Next interesting thing to think about is how do we complete a todo. The intention of having a list of things we need to carry out it as at some point in time we will hopefully carry out those items on the list. Now we have to ask ourselves wether we want to remove a finished item in our todo list or simply mark it as completed. We opt for the latter to feel good about ourselves for completing it but also so what we can see what we have carried out historically. This tells us something about our data structure. It should most likely look something like this:</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    title<span class="token punctuation">:</span> <span class="token string">'clean'</span><span class="token punctuation">,</span>
+    done<span class="token punctuation">:</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    title<span class="token punctuation">:</span> <span class="token string">'do dishes'</span><span class="token punctuation">,</span>
+    done<span class="token punctuation">:</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>The above list seems like a reasonable design of the data structure and now we can turn to trying to render it in React.</p> <h2 id="rendering-the-list"><a href="#rendering-the-list" aria-hidden="true" class="header-anchor">#</a> Rendering the list</h2> <p>Most likely we will try out with something like this:</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token punctuation">{</span>todos<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">todo</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+  <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;checkbox&quot;</span> checked<span class="token operator">=</span><span class="token punctuation">{</span>todo<span class="token punctuation">.</span>done<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>todo<span class="token punctuation">.</span>title<span class="token punctuation">}</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token punctuation">)</span><span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>At this point we are able to render our todo list but we are not able to change the value of the todo. Let's build this out to a real React component class and add support for changing a todo to done.</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> styled <span class="token keyword">from</span> <span class="token string">'styled-components'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token string">'./App.css'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> todos <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    title<span class="token punctuation">:</span> <span class="token string">'clean'</span><span class="token punctuation">,</span>
+    done<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    title<span class="token punctuation">:</span> <span class="token string">'do the dishes'</span><span class="token punctuation">,</span>
+    done<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> Todos <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token string">`
+  padding: 30px;
+`</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> Todo <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token string">`
+  box-shadow: 0 0 5px gray;
+  padding: 30px;
+  margin-bottom: 10px;
+`</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>Todos<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>h2<span class="token operator">&gt;</span>Todos<span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">&gt;</span>
+        <span class="token punctuation">{</span>todos<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">todo</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>Todo<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;checkbox&quot;</span> checked<span class="token operator">=</span><span class="token punctuation">{</span>todo<span class="token punctuation">.</span>done<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>todo<span class="token punctuation">.</span>title<span class="token punctuation">}</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>Todo<span class="token operator">&gt;</span>
+        <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>Todos<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br></div></div><p>Above we have created a fully working component but we are yet to add support for changing our <code>todos</code>. Let's do that next. We need to do the following:</p> <ul><li>listen to an <code>onChange</code> event when we check our checkbox</li> <li>change the item in our todo list to reflect the change we just made</li></ul> <p>Listen to onChange is quite simple, we just need to add a method that listens to it like so:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;input type=&quot;checkbox&quot; checked={todo.done} onChange={() =&gt; this.handleChange(todo)} /&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>After that we need to figure out a way to change a todo in our list. We could be altering the todos list directly but the more React thing todo would be to create a todos state in the component, like so:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>state = {
+  todos
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>Let's now add the final code:</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> styled <span class="token keyword">from</span> <span class="token string">'styled-components'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token string">'./App.css'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> todos <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    title<span class="token punctuation">:</span> <span class="token string">'clean'</span><span class="token punctuation">,</span>
+    done<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    id<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    title<span class="token punctuation">:</span> <span class="token string">'do the dishes'</span><span class="token punctuation">,</span>
+    done<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    id<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> Todos <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token string">`
+  padding: 30px;
+`</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> Todo <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token string">`
+  box-shadow: 0 0 5px gray;
+  padding: 30px;
+  margin-bottom: 10px;
+`</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  state <span class="token operator">=</span> <span class="token punctuation">{</span>
+    todos<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token function-variable function">handleChecked</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">todo</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> newTodos <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>todos<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">t</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>t<span class="token punctuation">.</span>id <span class="token operator">===</span> todo<span class="token punctuation">.</span>id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token operator">...</span>t<span class="token punctuation">,</span> done<span class="token punctuation">:</span> <span class="token operator">!</span>t<span class="token punctuation">.</span>done <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">return</span> t<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      todos<span class="token punctuation">:</span> newTodos<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+<span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>Todos<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>h2<span class="token operator">&gt;</span>Todos<span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">&gt;</span>
+      <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>todos<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">todo</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>Todo key<span class="token operator">=</span><span class="token punctuation">{</span>todo<span class="token punctuation">.</span>id<span class="token punctuation">}</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;checkbox&quot;</span> onChange<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleChecked</span><span class="token punctuation">(</span>todo<span class="token punctuation">)</span><span class="token punctuation">}</span> checked<span class="token operator">=</span><span class="token punctuation">{</span>todo<span class="token punctuation">.</span>done<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token punctuation">{</span>todo<span class="token punctuation">.</span>title<span class="token punctuation">}</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>Todo<span class="token operator">&gt;</span>
+      <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>Todos<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br></div></div><p>Let's zoom in on the <code>handleChecked()</code> method here to realise what we have done:</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token function-variable function">handleChecked</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">todo</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> newTodos <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>todos<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">t</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>t<span class="token punctuation">.</span>id <span class="token operator">===</span> todo<span class="token punctuation">.</span>id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token operator">...</span>t<span class="token punctuation">,</span> done<span class="token punctuation">:</span> <span class="token operator">!</span>t<span class="token punctuation">.</span>done <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> t<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    todos<span class="token punctuation">:</span> newTodos<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>we go through the list, todo by todo until we find the selected <code>todo</code> then we change it state by doing an object spread:</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token operator">...</span>t<span class="token punctuation">,</span> done<span class="token punctuation">:</span> <span class="token operator">!</span>t<span class="token punctuation">.</span>done <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>Another thing worth noting is that our todo now consist of three properties:</p> <ul><li>title</li> <li>done</li> <li>id</li></ul> <p>We needed the <code>id</code> property to identify which todo we were trying to modify.</p> <h2 id="create-a-todos-component"><a href="#create-a-todos-component" aria-hidden="true" class="header-anchor">#</a> Create a todos component</h2> <p>So far we have everything inside of the App component and we don't want our entire application to live in there. What if we want to add other stuff. First thing we are going to do is to create a <code>Todos</code> component and thereby move the rendering, state and methods into that component. We will end up with the following files:</p> <ul><li>App.js - we had this from the beginning</li> <li>Todos.js - this is new</li></ul> <p>Our Todos.js will contain pretty much all of what App.js used to contain:</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// Todos.js</span>
+
+<span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> styled <span class="token keyword">from</span> <span class="token string">'styled-components'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> PropTypes <span class="token keyword">from</span> <span class="token string">'prop-types'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> TodosContainer <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token string">`
+  padding: 30px;
+`</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> Todo <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token string">`
+  box-shadow: 0 0 5px gray;
+  padding: 30px;
+  margin-bottom: 10px;
+`</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Todos</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token keyword">static</span> propTypes <span class="token operator">=</span> <span class="token punctuation">{</span>
+    todos<span class="token punctuation">:</span> PropTypes<span class="token punctuation">.</span>array<span class="token punctuation">.</span>isRequired<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+
+  state <span class="token operator">=</span> <span class="token punctuation">{</span>
+    todos<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>todos<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token function-variable function">handleChecked</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">todo</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> newTodos <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>todos<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">t</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>t<span class="token punctuation">.</span>id <span class="token operator">===</span> todo<span class="token punctuation">.</span>id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token operator">...</span>t<span class="token punctuation">,</span> done<span class="token punctuation">:</span> <span class="token operator">!</span>t<span class="token punctuation">.</span>done <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">return</span> t<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      todos<span class="token punctuation">:</span> newTodos<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>TodosContainer<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>h2<span class="token operator">&gt;</span>Todos<span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">&gt;</span>
+      <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>todos<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">todo</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>Todo key<span class="token operator">=</span><span class="token punctuation">{</span>todo<span class="token punctuation">.</span>id<span class="token punctuation">}</span><span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;checkbox&quot;</span> onChange<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleChecked</span><span class="token punctuation">(</span>todo<span class="token punctuation">)</span><span class="token punctuation">}</span> checked<span class="token operator">=</span><span class="token punctuation">{</span>todo<span class="token punctuation">.</span>done<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>todo<span class="token punctuation">.</span>title<span class="token punctuation">}</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>Todo<span class="token operator">&gt;</span>
+      <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>TodosContainer<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> Todos<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br></div></div><p>The App.js will now look like the following:</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> Todos <span class="token keyword">from</span> <span class="token string">'./Todos'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token string">'./App.css'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> todos <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    title<span class="token punctuation">:</span> <span class="token string">'clean'</span><span class="token punctuation">,</span>
+    done<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    id<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    title<span class="token punctuation">:</span> <span class="token string">'do the dishes'</span><span class="token punctuation">,</span>
+    done<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    id<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>Todos todos<span class="token operator">=</span><span class="token punctuation">{</span>todos<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><h2 id="breaking-down-the-todos-component"><a href="#breaking-down-the-todos-component" aria-hidden="true" class="header-anchor">#</a> Breaking down the todos component</h2> <p>So far Todos.js is one massive component. We can break it down according to responsibility. I mean it works to have it like it is but it's usually better to break down your app into small focused components, to make maintenance easier. Another reason is making it easier to use certain components in other places. So what can we break down Todos.js into? Well we can at least break it down into:</p> <ul><li>Todos, this would render a list of Todo components and handle all the events</li> <li>Todo, this would only be responsible for rendering a Todo and send any change action upwards</li></ul> <p>Let's make the necessary changes:</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// Todo.js</span>
+
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> styled <span class="token keyword">from</span> <span class="token string">'styled-components'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> PropTypes <span class="token keyword">from</span> <span class="token string">'prop-types'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> TodoContainer <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token string">`
+  box-shadow: 0 0 5px gray;
+  padding: 30px;
+  margin-bottom: 10px;
+`</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">Todo</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> todo<span class="token punctuation">,</span> handleChecked <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+  <span class="token operator">&lt;</span>TodoContainer key<span class="token operator">=</span><span class="token punctuation">{</span>todo<span class="token punctuation">.</span>id<span class="token punctuation">}</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;checkbox&quot;</span> onChange<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">handleChecked</span><span class="token punctuation">(</span>todo<span class="token punctuation">)</span><span class="token punctuation">}</span> checked<span class="token operator">=</span><span class="token punctuation">{</span>todo<span class="token punctuation">.</span>done<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token punctuation">{</span>todo<span class="token punctuation">.</span>title<span class="token punctuation">}</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>TodoContainer<span class="token operator">&gt;</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+Todo<span class="token punctuation">.</span>propTypes <span class="token operator">=</span> <span class="token punctuation">{</span>
+  todo<span class="token punctuation">:</span> PropTypes<span class="token punctuation">.</span><span class="token function">shape</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    title<span class="token punctuation">:</span> PropTypes<span class="token punctuation">.</span>string<span class="token punctuation">,</span>
+    done<span class="token punctuation">:</span> PropTypes<span class="token punctuation">.</span>bool<span class="token punctuation">,</span>
+    id<span class="token punctuation">:</span> PropTypes<span class="token punctuation">.</span>number<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  handleChecked<span class="token punctuation">:</span> PropTypes<span class="token punctuation">.</span>func<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> Todo<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><p>Above we have broken out the <code>Todo</code> rendering into its own component. As you can see the component is not defined as a class inheriting from React.Component but is simply just a function. This is called a presentation or dumb component. What makes it dumb is that it knows nothing about the context it is in only that it relies on input, <code>todo</code> and invokes any action that it is being provided through its props, namely <code>handleChecked()</code>. Our Todos file now looks a bit simpler like so:</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// Todos.js</span>
+
+<span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> styled <span class="token keyword">from</span> <span class="token string">'styled-components'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> PropTypes <span class="token keyword">from</span> <span class="token string">'prop-types'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> Todo <span class="token keyword">from</span> <span class="token string">'./Todo'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> TodosContainer <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token string">`
+  padding: 30px;
+`</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Todos</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token keyword">static</span> propTypes <span class="token operator">=</span> <span class="token punctuation">{</span>
+    todos<span class="token punctuation">:</span> PropTypes<span class="token punctuation">.</span>array<span class="token punctuation">.</span>isRequired<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+
+  state <span class="token operator">=</span> <span class="token punctuation">{</span>
+    todos<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>todos<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token function-variable function">handleChecked</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">todo</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> newTodos <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>todos<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">t</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>t<span class="token punctuation">.</span>id <span class="token operator">===</span> todo<span class="token punctuation">.</span>id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token operator">...</span>t<span class="token punctuation">,</span> done<span class="token punctuation">:</span> <span class="token operator">!</span>t<span class="token punctuation">.</span>done <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> t<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    todos<span class="token punctuation">:</span> newTodos<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>TodosContainer<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>h2<span class="token operator">&gt;</span>Todos<span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">&gt;</span>
+        <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>todos<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">todo</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>Todo todo<span class="token operator">=</span><span class="token punctuation">{</span>todo<span class="token punctuation">}</span> key<span class="token operator">=</span><span class="token punctuation">{</span>todo<span class="token punctuation">.</span>id<span class="token punctuation">}</span> handleChecked<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleChecked<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+        <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>TodosContainer<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> Todos<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div><p>We now import the Todo component, like so:</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span> Todo <span class="token keyword">from</span> <span class="token string">'./Todo'</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>Let's zoom in on the interesting part:</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token operator">&lt;</span>Todo todo<span class="token operator">=</span><span class="token punctuation">{</span>todo<span class="token punctuation">}</span> key<span class="token operator">=</span><span class="token punctuation">{</span>todo<span class="token punctuation">.</span>id<span class="token punctuation">}</span> handleChecked<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleChecked<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>Above we simply let the Todo component handle all the rendering and we provide it with the data <code>todo</code> and the method <code>handleChecked()</code>. Ok so we mentioned presentational components so far so what is the other kind of component the container component. A container component is a component where data and logic lives. It 'contains' the meat of the application. In our app the Todos component is a container component and the Todo is a presentational component. If you are building your app in the right way you will end up with a majority of presentational components and a few container components.</p> <h2 id="summary"><a href="#summary" aria-hidden="true" class="header-anchor">#</a> Summary</h2> <p>We set out to create a working Todo app. We did so. We also set out to break down the mentioned app into many small components where each component was more focused on its task making future changes or reuse a lot easier. We introduced the term Dumb/Presentation component and Container component and explained what those were. to show that it only relied on inputs.</p></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.26388f3c.js" defer></script><script src="/assets/js/10.5bc7cce6.js" defer></script><script src="/assets/js/33.6407b065.js" defer></script>
+  </body>
+</html>
